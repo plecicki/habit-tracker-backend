@@ -1,0 +1,23 @@
+[
+  {
+    "rewardId": 1,
+    "title": "ABC",
+    "description": "ABC",
+    "priorityPoints": 1,
+    "imageAddress": "abc"
+  },
+  {
+    "rewardId": 2,
+    "title": "ABCD",
+    "description": "ABCD",
+    "priorityPoints": 2,
+    "imageAddress": "abcd"
+  },
+  {
+    "rewardId": 3,
+    "title": "ABCDF",
+    "description": "ABCDF",
+    "priorityPoints": 3,
+    "imageAddress": "abcdf"
+  }
+]
