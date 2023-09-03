@@ -1,23 +1,72 @@
 [
   {
     "rewardId": 1,
-    "title": "ABC",
-    "description": "ABC",
+    "title": "Beginner",
+    "description": "Don't worry, everyone has to start",
     "priorityPoints": 1,
-    "imageAddress": "abc"
+    "imageFile": "beg.png"
   },
   {
     "rewardId": 2,
-    "title": "ABCD",
-    "description": "ABCD",
+    "title": "Amateur",
+    "description": "You created table, I'm proud, good luck",
     "priorityPoints": 2,
-    "imageAddress": "abcd"
+    "imageFile": "ama.png"
   },
   {
     "rewardId": 3,
-    "title": "ABCDF",
-    "description": "ABCDF",
+    "title": "First day",
+    "description": "First filled day, you have just started sth big",
     "priorityPoints": 3,
-    "imageAddress": "abcdf"
+    "imageFile": "fir.png"
+  },
+  {
+    "rewardId": 4,
+    "title": "3 days",
+    "description": "Three days of hard work, nice",
+    "priorityPoints": 4,
+    "imageFile": "thi.png"
+  },
+  {
+    "rewardId": 5,
+    "title": "1 week",
+    "description": "One week of creating sth big",
+    "priorityPoints": 5,
+    "imageFile": "wee.png"
+  },
+  {
+    "rewardId": 6,
+    "title": "2 weeks",
+    "description": "That's very good example of discipline",
+    "priorityPoints": 6,
+    "imageFile": "two.png"
+  },
+  {
+    "rewardId": 7,
+    "title": "1 month",
+    "description": "You probably see results of your hard work :)",
+    "priorityPoints": 7,
+    "imageFile": "mon.png"
+  },
+  {
+    "rewardId": 8,
+    "title": "6 months",
+    "description": "Hello, is it Giga Chad here?",
+    "priorityPoints": 8,
+    "imageFile": "six.png"
+  },
+  {
+    "rewardId": 9,
+    "title": "1 year",
+    "description": "That is a big reason to be proud of yourself",
+    "priorityPoints": 9,
+    "imageFile": "one.png"
+  },
+  {
+    "rewardId": 10,
+    "title": "5 years",
+    "description": "I think, now you can teach others, how to become the best version of yourself",
+    "priorityPoints": 10,
+    "imageFile": "ten.png"
   }
 ]

@@ -28,6 +28,6 @@ public class Reward {
     @Column(name = "PRIORITY_POINTS")
     private Integer priorityPoints;
 
-    @Column(name = "IMAGE_ADDRESS")
-    private String imageAddress;
+    @Column(name = "IMAGE_FILE")
+    private String imageFile;
 }
