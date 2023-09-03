@@ -16,13 +16,19 @@ public class Initializer {
 
     private final RewardRepository rewardRepository;
 
+    private final int FIRST_REWARD_ID = 1;
+    private final String REWARD_FILE_IN_RESOURCES_NAME = "/rewards.json";
+
     @PostConstruct
     public void init() throws IOException {
-        InputStream inJson = Reward.class.getResourceAsStream("/rewards.json");
+        InputStream inJson = Reward.class.getResourceAsStream(REWARD_FILE_IN_RESOURCES_NAME);
         Reward[] rewards = new ObjectMapper().readValue(inJson, Reward[].class);
 
-        for (int rewardId=1; rewardId<=rewards.length; rewardId++) {
-            if (!rewardRepository.existsById((long) rewardId)) rewardRepository.save(rewards[rewardId - 1]);
+        for (int rewardId = FIRST_REWARD_ID; rewardId <= rewards.length; rewardId++) {
+            boolean rewardDoesntExist = !rewardRepository.existsById((long) rewardId);
+            if (rewardDoesntExist) {
+                rewardRepository.save(rewards[rewardId - 1]);
+            }
         }
     }
 }
