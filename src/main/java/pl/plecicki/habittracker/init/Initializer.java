@@ -5,6 +5,7 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.plecicki.habittracker.domains.entities.Reward;
+import pl.plecicki.habittracker.repositories.HabitTableFactory;
 import pl.plecicki.habittracker.repositories.RewardRepository;
 
 import java.io.IOException;
@@ -15,6 +16,8 @@ import java.io.InputStream;
 public class Initializer {
 
     private final RewardRepository rewardRepository;
+    //TODO delete it
+    private final HabitTableFactory habitTableFactory;
 
     private final int FIRST_REWARD_ID = 1;
     private final String REWARD_FILE_IN_RESOURCES_NAME = "/rewards.json";
@@ -30,5 +33,9 @@ public class Initializer {
                 rewardRepository.save(rewards[rewardId - 1]);
             }
         }
+
+        //TODO delete it
+        habitTableFactory.createTable(123);
+        habitTableFactory.addReadingColumn(123);
     }
 }
