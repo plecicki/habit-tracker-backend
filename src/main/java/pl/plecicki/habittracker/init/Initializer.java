@@ -35,7 +35,7 @@ public class Initializer {
         }
 
         //TODO delete it
-        habitTableFactory.createTable(123);
-        habitTableFactory.addReadingColumn(123);
+        habitTableFactory.createTable(1L);
+        habitTableFactory.addReadingColumn(1L);
     }
 }
