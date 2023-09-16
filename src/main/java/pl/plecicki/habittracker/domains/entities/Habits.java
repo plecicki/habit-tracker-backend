@@ -13,46 +13,46 @@ public class Habits {
 
     @Id
     @GeneratedValue
-    @Column(name = "HABIT_ID", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private Long habitId;
 
-    @Column(name = "MEDITATION")
+    @Column
     private Boolean meditation;
 
-    @Column(name = "MEDITATION_TIME")
+    @Column
     private Integer meditationTime;
 
-    @Column(name = "READING")
+    @Column
     private Boolean reading;
 
-    @Column(name = "READING_TIME")
+    @Column
     private Integer readingTime;
 
-    @Column(name = "READING_TITLE")
+    @Column
     private String readingTitle;
 
-    @Column(name = "EXERCISING_NAME")
+    @Column
     private String exercisingName;
 
-    @Column(name = "GRATITUDE_AMOUNT")
+    @Column
     private Short gratitudeAmount;
 
-    @Column(name = "LEARNING")
+    @Column
     private Boolean learning;
 
-    @Column(name = "LEARNING_TIME")
-    private Integer learning_time;
+    @Column
+    private Integer learningTime;
 
-    @Column(name = "COLD_SHOWER")
+    @Column
     private Boolean coldShower;
 
-    @Column(name = "COLD_SHOWER_TIME")
+    @Column
     private Integer coldShowerTime;
 
-    @Column(name = "OTHER_GOOD_HABITS")
+    @Column
     private String otherGoodHabits;
 
-    @Column(name = "BAD_HABITS")
+    @Column
     private String badHabits;
 
     @ManyToOne

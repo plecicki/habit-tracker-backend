@@ -16,18 +16,18 @@ public class Reward {
 
     @Id
     @GeneratedValue
-    @Column(name = "REWARD_ID", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private Long rewardId;
 
-    @Column(name = "TITLE")
+    @Column
     private String title;
 
-    @Column(name = "DESCRIPTION")
+    @Column
     private String description;
 
-    @Column(name = "PRIORITY_POINTS")
+    @Column
     private Integer priorityPoints;
 
-    @Column(name = "IMAGE_FILE")
+    @Column
     private String imageFile;
 }
