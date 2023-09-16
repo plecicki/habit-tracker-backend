@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.plecicki.habittracker.domains.entities.Habits;
 
 @Repository
-public interface HabitTableRepository extends CrudRepository<Habits, Long> {
+public interface HabitsRepository extends CrudRepository<Habits, Long> {
 
     @Transactional
     @Modifying
