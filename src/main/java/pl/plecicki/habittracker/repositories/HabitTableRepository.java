@@ -1,26 +1,14 @@
 package pl.plecicki.habittracker.repositories;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import pl.plecicki.habittracker.domains.entities.HabitTable;
-
-import java.sql.SQLSyntaxErrorException;
-import java.util.List;
+import pl.plecicki.habittracker.domains.entities.Habits;
 
 @Repository
-public interface HabitTableFactory extends CrudRepository<HabitTable, Long> {
-
-//    @Query(value = "SELECT COUNT(*) " +
-//            "FROM information_schema.columns " +
-//            "WHERE table_name = :tableName " +
-//            "AND column_name = :columnName", nativeQuery = true)
-//    List<Object[]> checkIfColumnExists(String tableName, String columnName);
+public interface HabitTableRepository extends CrudRepository<Habits, Long> {
 
     @Transactional
     @Modifying
