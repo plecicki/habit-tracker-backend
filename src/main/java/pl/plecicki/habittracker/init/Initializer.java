@@ -36,12 +36,5 @@ public class Initializer {
                 rewardRepository.save(rewards[rewardId - 1]);
             }
         }
-
-        User user1 = new User(0L, "aaa", "$2a$12$BFUoL/MHbuOSUoBnIuti/.Y8inIG84wQlmTFK9Z9Ih4SqtGwCqv1O", Role.USER, new ArrayList<>());
-        User user2 = new User(0L, "bbb", "$2a$12$8yE5Kd1WPlvdsTRiA2ul4OD1M1ZIhKQvYZO1TZrbcH3yrVxEja8/m", Role.ADMIN, new ArrayList<>());
-        userRepository.save(user1);
-        userRepository.save(user2);
-        System.out.println(user1.getRole().name());
-        System.out.println(user2.getRole().name());
     }
 }

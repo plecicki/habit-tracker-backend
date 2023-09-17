@@ -28,6 +28,15 @@ public class User {
     @Column
     private Role role;
 
+    @Column
+    private String nickname;
+
+    @Column
+    private String email;
+
+    @Column
+    private String photoFileName;
+
     @OneToMany
     private List<Habits> habits;
 
